@@ -1,34 +1,28 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import {getInputChangeAction,getDeleteItemAction,getAddItemAction} from './store/actionCreators';
 
-
-class TodoList extends Component{
-
-    render() {
-
-        const {inputValue,list,changeInputValue,handleClick,handleDelete} = this.props;
-
-        return (
+const TodoList = (props) => {
+    const {inputValue,list,changeInputValue,handleClick,handleDelete} = props;
+    return (
+        <div>
            <div>
-              <div>
-                <input type="text" value={inputValue} onChange={changeInputValue}/>
-                <button onClick={handleClick}>提交</button>
-              </div>
-              <div>
-                  <ul >
-                      {
-                          list.map((item, index) => {
-                              return <li key={index} onClick={() =>{handleDelete(index)}}>{item}</li>
-                          })
-                      }
-                  </ul>
-              </div>
+             <input type="text" value={inputValue} onChange={changeInputValue}/>
+             <button onClick={handleClick}>提交</button>
            </div>
-        );
-    }
-
+           <div>
+               <ul >
+                   {
+                       list.map((item, index) => {
+                           return <li key={index} onClick={() =>{handleDelete(index)}}>{item}</li>
+                       })
+                   }
+               </ul>
+           </div>
+        </div>
+     );
 }
+
     
     // 将 store 的数据和本组件中的 props 作映射
     const mapStateToProps = (state)=>{
