@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/jianshu/node_modules
+/jianshu/.pnp
+/jianshu/.pnp.js
+
+# testing
+/jianshu/coverage
+
+# production
+/jianshu/build
+
+# misc
+/jianshu/.DS_Store
+/jianshu.env/.local
+/jianshu/.env.development.local
+/jianshu/.env.test.local
+/jianshu/.env.production.local
+
+/jianshu/npm-debug.log*
+/jianshu/yarn-debug.log*
+/jianshu/yarn-error.log*
