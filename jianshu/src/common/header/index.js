@@ -32,7 +32,7 @@ const Header = (props) => {
              </Nav>
              <Addition>
                  <Button className='writting'><span className="iconfont">&#xe602;</span>写文章</Button>
-                 <Button className='reg'>注册{props.focused.toString()}</Button>
+                 <Button className='reg'>注册</Button>
              </Addition>
             </HeaderWrapper>
     )
@@ -42,7 +42,7 @@ const Header = (props) => {
 
 const mapStateToProps = (state)=> {
     return {
-        focused: state.focused
+        focused: state.header.focused
     }
 }
 const mapDispatchToProps = (dispatch)=> {
