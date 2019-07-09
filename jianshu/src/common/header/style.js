@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import logoPic from '../../statics/logo.png'
 
 
+
 export const HeaderWrapper = styled.div`
     position: relative;
     height: 58px;
@@ -50,7 +51,7 @@ export const NavSearch = styled.input.attrs({
 })`
     margin-top: 9px;
     margin-left: 20px;
-    padding: 0 35px 0 20px;
+    padding: 0 30px 0 20px;
     box-sizing: border-box;
     width: 160px;
     height: 38px;
@@ -59,8 +60,26 @@ export const NavSearch = styled.input.attrs({
     border-radius: 19px;
     background: #eee;
     font-size: 14px;
+    color: #666;
     &::placeholder {
         color: #999;
+    }
+    &.focused {
+        width: 240px;
+        padding: 0 40px 0 20px;
+    }
+    &.slide-enter{
+        width: 160px;
+        transition: all .2s ease-out;
+    }
+    &.slide-enter-active{
+        width: 240px;
+    }
+    &.slide-exit{
+        transition: all .2s ease-out;
+    }
+    &.slide-exit-active{
+        width: 160px;
     }
 `;
 
@@ -100,5 +119,9 @@ export const SearchWrapper = styled.div`
         line-height: 30px;
         border-radius: 15px;
         text-align: center;
+        &.focused {
+            background: #777;
+            color: #fff;
+        }
     }
 `
