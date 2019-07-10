@@ -13,7 +13,7 @@
 
 # misc
 /jianshu/.DS_Store
-/jianshu.env/.local
+/jianshu/.env/.local
 /jianshu/.env.development.local
 /jianshu/.env.test.local
 /jianshu/.env.production.local
@@ -21,3 +21,27 @@
 /jianshu/npm-debug.log*
 /jianshu/yarn-debug.log*
 /jianshu/yarn-error.log*
+
+
+
+# demo-router dependencies
+/demo-router/node_modules
+/demo-router/.pnp
+/demo-router/.pnp.js
+
+# testing
+/demo-router/coverage
+
+# production
+/demo-router/build
+
+# misc
+/demo-router/.DS_Store
+/demo-router/.env/.local
+/demo-router/.env.development.local
+/demo-router/.env.test.local
+/demo-router/.env.production.local
+
+/demo-router/npm-debug.log*
+/demo-router/yarn-debug.log*
+/demo-router/yarn-error.log*
