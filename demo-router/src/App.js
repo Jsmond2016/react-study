@@ -1,42 +1,22 @@
 import React from "react";
-import  './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './components/Home';
+import About from './components/About';
+import Header from './components/Header';
+import Topics from './components/Topics';
 
 
-const TabOne = () => {
-  return (
-    <div className="tab tab1">Tab---1111</div>
-  )
-}
-
-const Tabtwo = () => {
-  return (
-    <div className="tab tab2">Tab---2222</div>
-  )
-}
-
-const Welcome = () => {
-  return (
-    <div className="tab">welcome!</div>
-  )
-}
-
-
-function AppRouter() {
+function App() {
   return (
     <Router>
-      <div >
-        <nav>
-          <button> <Link to="/tab1/">Tab1</Link> </button>
-          <button> <Link to="/tab2/">Tab2</Link> </button>
-        </nav>
-
-        <Route path="/" exact component={Welcome} />
-        <Route path="/tab1/" component={TabOne} />
-        <Route path="/tab2/" component={Tabtwo} />
+      <div>
+        <Header />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/topics" component={Topics} />
       </div>
     </Router>
   );
 }
 
-export default AppRouter;
+export default App;
