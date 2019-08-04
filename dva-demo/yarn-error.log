@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add strip-ansi
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/f/cmder/vendor/conemu-maximus5/ConEmu/Scripts:/mnt/f/cmder/vendor/conemu-maximus5:/mnt/f/cmder/vendor/conemu-maximus5/ConEmu:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Intel/WiFi/bin:/mnt/c/Program Files/Common Files/Intel/WirelessCommon:/mnt/c/Program Files (x86)/Common Files/Thunder Network/KanKan/Codecs:/mnt/f/nodejs:/mnt/f/Git/cmd:/mnt/f/cmder/bin:/mnt/c/Users/jin/AppData/Local/Microsoft/WindowsApps:/mnt/f/Microsoft VS Code/bin:/mnt/c/Users/jin/AppData/Roaming/npm:/snap/bin:/home/root01/.fzf/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/home/root01/.cache/yarn/v4/npm-camelcase-3.0.0-32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a/node_modules/camelcase/index.js' -> '/mnt/c/Users/jin/desktop/Demo/dva-demo/node_modules/webpack-dev-server/node_modules/camelcase/index.js'
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "roadhog server",
+      "build": "roadhog build",
+      "lint": "eslint --ext .js src test",
+      "precommit": "npm run lint"
+    },
+    "dependencies": {
+      "dva": "^2.4.1",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+      "babel-plugin-dva-hmr": "^0.3.2",
+      "eslint": "^4.14.0",
+      "eslint-config-umi": "^0.1.1",
+      "eslint-plugin-flowtype": "^2.34.1",
+      "eslint-plugin-import": "^2.6.0",
+      "eslint-plugin-jsx-a11y": "^5.1.1",
+      "eslint-plugin-react": "^7.1.0",
+      "husky": "^0.12.0",
+      "redbox-react": "^1.4.3",
+      "roadhog": "^2.5.0-beta.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
